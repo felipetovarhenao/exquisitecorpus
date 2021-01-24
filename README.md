@@ -1,7 +1,7 @@
 # **exquisitecorpus**: 
-### __corpus-based sampling & analysis M4L devices__
+#### __corpus-based sampling & analysis M4L devices__
 
-### EC-analyzer reference
+## EC-analyzer reference
 **Device type**: Max instrument
 
 #### Description
