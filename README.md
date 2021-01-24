@@ -4,6 +4,8 @@
 ## EC-analyzer reference
 **Device type**: Max instrument
 
+![EC-analyze prev](https://github.com/felipetovarhenao/exquisitecorpus/blob/main/02%20ec_analyzer/EC-analyzer_prev.png)
+
 #### Description
 
 Offline pitch detection and segmentation device for easy corpus construction. **EC-analyzer** works in the following way:
@@ -41,6 +43,8 @@ For corpus-based sampling, see **EC-sampler**.
 
 ## EC-sampler reference
 **Device type**: Max instrument
+
+![EC-sampler prev](https://github.com/felipetovarhenao/exquisitecorpus/blob/main/02%20ec_analyzer/EC-analyzer_prev.png)
 
 #### Description
 
