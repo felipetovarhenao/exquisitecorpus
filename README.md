@@ -22,18 +22,27 @@ Offline pitch detection and segmentation device for easy corpus construction. **
 For corpus-based sampling, see **EC-sampler**.
 
 #### Parameters and user interface:
+
+![EC-analyze_m1](EC-screenshots/EC-analyzer_m1.png)
+
 * **output folder**: opens dialog window to select a directory in which the resulting segments will be saved.
 * **input sample**: opens dialog window to select the sample to be analyzed and segmented.
 * **input folder**: opens dialog window to select a folder from which to choose the sample to be analyzed and segmented.
 * **input chooser**: when loading using ‘input folder’, all the samples in the folder are displayed in this window. Click sample on which to perform the analysis.
 * **start**: starts pitch detection and segmentation.
 * **stop**: stops pitch detection and segmentation.
+
+![EC-analyze_m2](EC-screenshots/EC-analyzer_m2.png)
+
 * **output duration (ms)**: sets the duration for all the resulting segments. Please note, this duration does not determine the window size of the analysis.
 * **hop size (ms)**: sets the time interval between adjacent windows for the analysis.
 * **overlap factor (ms)**: determines the amount of overlap between adjacent windows for the analysis. The total window length = the hop size * overlap factor.
 * **tolerance (σ)**: sets the error tolerance for pitch detection, in semitones. More precisely, it is the maximum standard deviation allowed for a pitch to be detected.
 * **progress**: shows the percentage of the analysis — this can also be viewed in the waveform display.
 * **samples**: shows the number of segments created at the end of each analysis.
+
+![EC-analyze_m3](EC-screenshots/EC-analyzer_m3.png)
+
 * **corpus chooser**: displays every detected segment for preview.
 * **save selection**: writes all the selected segments into the output folder.
 * **out. gain**: sets output gain in dB.
@@ -63,9 +72,13 @@ For quick corpus construction, see **EC-analyzer**.
 
 #### Parameters and user interface:
 
+![EC-sampler_m1](EC-screenshots/EC-sampler_m1.png)
+
 * **load corpus**: opens dialog window to select a directory containing multiple .wav or .aif audio files. As mentioned earlier, the name of each sound file should include at the beginning its corresponding MIDI pitch value — e.g. `71_clarinet_sound.aiff`
 * **corpus chooser**: Displays all the audio files in the loaded corpus. At least one sample must be selected in order to EC-sampler to work.
 * **store**: **EC-sampler** has 10 slots to store selections withing the same corpus. To do this, select the target slot using the number box, then select the selection of samples you want to store, and click on the store button. Changing the slot index will automatically load the selection assigned to that slot.
+
+![EC-sampler_m2](EC-screenshots/EC-sampler_m2.png)
 
 * **transp. Mode**: sets the mode of transposition. 
   * **bypass**: Removes any pitch transposition, preserving every sample's original pitch and duration.
@@ -91,6 +104,9 @@ For quick corpus construction, see **EC-analyzer**.
   * [click] on point to change its position. 
   * [alt+click & drag] to edit curvature between points.
   * [shift+click] to delete point.
+
+![EC-sampler_m3](EC-screenshots/EC-sampler_m3.png)
+
 * **step sequencer**: GUI for customizing a duration-velocity sequence to be used in pulse mode. The period and segment of the sequence to be changed via the loop selector on top.
 * **sequence index**: The step sequencer contains 8 different slots in which to store separate sequences. The sequence index sets the sequence to be used or edited. 
 * **step sequencer toggle**: Enables/disables the use of the step sequencer in pulse mode.
