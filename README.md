@@ -107,7 +107,7 @@ For quick corpus construction, see **EC-analyzer**.
 
 ![EC-sampler_m3](EC-screenshots/EC-sampler_m3.png)
 
-* **step sequencer**: GUI for customizing a duration-velocity sequence to be used in pulse mode. The period and segment of the sequence can be changed via the loop selector on top.
+* **step sequencer**: GUI for customizing a duration-velocity step sequence to be used in pulse mode. The period and segment of the step sequence can be changed via the loop selector on top.
 * **sequence index**: The step sequencer contains 8 different slots in which to store separate sequences. The sequence index sets the sequence to be used or edited. 
 * **step sequencer toggle**: Enables/disables the use of the step sequencer in pulse mode.
 * **edit view**: Sets the step sequencer layer to be edited — i.e. velocity or duration.
