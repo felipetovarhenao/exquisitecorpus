@@ -54,36 +54,36 @@ For quick corpus construction, see **EC-analyzer**.
 
 #### Parameters and user interface:
 
-* **Load corpus**: opens dialog window to select a directory containing multiple .wav or .aif audio files. As mentioned earlier, the name of each sound file should include at the beginning its corresponding MIDI pitch value — e.g. `71_clarinet_sound.aiff`
-* **Corpus chooser**: Displays all the audio files in the loaded corpus. At least one sample must be selected in order to EC-sampler to work.
-* **Store**: **EC-sampler** has 10 slots to store selections withing the same corpus. To do this, select the target slot using the number box, then select the selection of samples you want to store, and click on the store button. Changing the slot index will automatically load the selection assigned to that slot.
+* **load corpus**: opens dialog window to select a directory containing multiple .wav or .aif audio files. As mentioned earlier, the name of each sound file should include at the beginning its corresponding MIDI pitch value — e.g. `71_clarinet_sound.aiff`
+* **corpus chooser**: Displays all the audio files in the loaded corpus. At least one sample must be selected in order to EC-sampler to work.
+* **store**: **EC-sampler** has 10 slots to store selections withing the same corpus. To do this, select the target slot using the number box, then select the selection of samples you want to store, and click on the store button. Changing the slot index will automatically load the selection assigned to that slot.
 
-* **Transp. Mode**: sets the mode of transposition. 
-  * **Repitch (default)**: changes the pitch while preserving the duration of the original sample.
-  * **Resample**: changes in pitch affect the duration of the original sample.
-* **Playback mode**: Sets the behavior between MIDI input and sample playback.
-  * **Trigger (default)**: a sample is triggered only when there is a new incoming MIDI note.
-  * **Pulse**: A stream of samples are triggered according to the specified pulse unit (see pulse unit). This mode only works when the Live transport is running. 
-* **Change sample**: sets the rate at which a new sample is assigned.
-  * **Pitch-wise (default)**: for every active MIDI pitch, a different sample from the corpus selection will be assigned.
-  * **Chord-wise**: When multiple MIDI pitches are active at the same time, the same sample from the corpus selection will be assigned to all of them. This only works in pulse mode. See playback mode. 
-* **Pulse unit**: sets the rhythmic value with respect to the current tempo, as a rational number. The fraction is expressed in relation to the whole-note within the current tempo — e.g. 1/16 = 16th note, 1/12 = 8th note triplet, 3/8 = dotted quarter note, and so on.
-* **Transposition**: controls the global transposition of the sampler in cents.
-* **Tr. Var**: sets the amount of random variation in transposition.
-* **Dur. Mult**: sets the duration ratio with respect to the pulse unit. 
-* **Dur. Var**: sets the amount of random variation in note duration.
-* **Rate. Var**: sets the amount of random variation in pulse rate. This only works in pulse mode. See playback mode. 
+* **transp. Mode**: sets the mode of transposition. 
+  * **repitch (default)**: changes the pitch while preserving the duration of the original sample.
+  * **resample**: changes in pitch affect the duration of the original sample.
+* **playback mode**: Sets the behavior between MIDI input and sample playback.
+  * **trigger (default)**: a sample is triggered only when there is a new incoming MIDI note.
+  * **pulse**: A stream of samples are triggered according to the specified pulse unit (see pulse unit). This mode only works when the Live transport is running. 
+* **change sample**: sets the rate at which a new sample is assigned.
+  * **pitch-wise (default)**: for every active MIDI pitch, a different sample from the corpus selection will be assigned.
+  * **chord-wise**: When multiple MIDI pitches are active at the same time, the same sample from the corpus selection will be assigned to all of them. This only works in pulse mode. See playback mode. 
+* **pulse unit**: sets the rhythmic value with respect to the current tempo, as a rational number. The fraction is expressed in relation to the whole-note within the current tempo — e.g. 1/16 = 16th note, 1/12 = 8th note triplet, 3/8 = dotted quarter note, and so on.
+* **transposition**: controls the global transposition of the sampler in cents.
+* **tr. var**: sets the amount of random variation in transposition.
+* **dur. mult**: sets the duration ratio with respect to the pulse unit. 
+* **dur. var**: sets the amount of random variation in note duration.
+* **rate. var**: sets the amount of random variation in pulse rate. This only works in pulse mode. See playback mode. 
 * **BMI (or body mass index)**: specifies how extreme the transposition of each sample can be. A greater BMI will allow more samples per pitch to be used, resulting in a more varied but less naturally-sounding corpus. Conversely, a lower BMI will result in a less varied but more naturally sounding corpus.
 * **out. gain**: sets output gain in dB.
-* **Stereo**: controls the width of the stereo image. 
-* **Envelope**: GUI for envelope specification.
-* **Step sequencer**: GUI for customizing a duration-velocity sequence to be used in pulse mode. The period and segment of the sequence to be changed via the loop selector on top.
-* **Sequence index**: The step sequencer contains 8 different slots in which to store separate sequences. The sequence index sets the sequence to be used or edited. 
-* **Step sequencer toggle**: Enables/disables the use of the step sequencer in pulse mode.
-* **Edit view**: Sets the step sequencer layer to be edited — i.e. velocity or duration.
-* **Scramble**: randomizes de values for each step in the step sequencer.
-* **Restart**: Sets back the sequence to step 1.
-* **Clear**: Normalizes all the step values in the current edit view.
+* **stereo**: controls the width of the stereo image. 
+* **envelope**: GUI for envelope specification.
+* **step sequencer**: GUI for customizing a duration-velocity sequence to be used in pulse mode. The period and segment of the sequence to be changed via the loop selector on top.
+* **sequence index**: The step sequencer contains 8 different slots in which to store separate sequences. The sequence index sets the sequence to be used or edited. 
+* **step sequencer toggle**: Enables/disables the use of the step sequencer in pulse mode.
+* **edit view**: Sets the step sequencer layer to be edited — i.e. velocity or duration.
+* **scramble**: randomizes de values for each step in the step sequencer.
+* **restart**: Sets back the sequence to step 1.
+* **clear**: Normalizes all the step values in the current edit view.
 
 #### Recommendations:
 *	When a corpus is loaded, **EC-sampler** automatically computes a dictionary specifying which samples are closer to each MIDI pitch, in order to minimize extreme transpositions. The percentage of the closest samples to be used for each pitch is determined by the BMI parameter. For reference, a BMI of 100% will use all the selected samples, resulting in possibly extreme pitch transpositions. A BMI of 0% will only use the sample that requires the smallest transposition amount for each pitch.  
