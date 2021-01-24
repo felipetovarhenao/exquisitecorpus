@@ -41,6 +41,7 @@ For corpus-based sampling, see **EC-sampler**.
 
 #### Recommendations:
 *	**EC-analyzer** performs significantly better on monophonic and clearly pitched sound files. Using noisy or spectrally dense samples will result in faulty pitch detection or reduced number of output segments.
+* Similarly, **EC-analyzer** tends to do better at detecting middle-range pitches (55-70), so low-pitched samples are more likely to be missed or mislabeled during the analysis.
 *	When the number of resulting segments is lower than expected, try using a shorter hop size or decreasing the overlap factor— this will contribute to detecting pitches with shorter durations.
 *	Although using a low tolerance will guarantee that the segments will be clearly pitched, this may result in very few, or no segments to choose from.
 *	During the segment selection process, work your way from the top to the bottom of the list. When selecting multiple segments, chooser will only play the lowest selected segment.
