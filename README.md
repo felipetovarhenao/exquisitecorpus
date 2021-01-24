@@ -65,7 +65,7 @@ For corpus-based sampling, see **EC-sampler**.
 Corpus-based sampling device that allows for absolute pitch transposition over a selection of multiple audio files — i.e a *corpus*. For **EC-sampler** to work properly, please note that:
 * The corpus must be a single folder, containing multiple and relatively short (1-5 sec) audio files. Longer files are ok but, in most situations, you won’t notice the difference.  
 * Each sound in the corpus should have a clear, predominant pitch. This doesn’t mean that the sample must consist of a single note, but rather that a single pitch should dominate over the others — either by duration, loudness, repetition, or proximity to the beginning of the file.
-* The filenames of the samples must start with the MIDI pitch value that best describes its content — e.g. `60_guitar_pluck.wav`. EC-sampler uses this information to provide absolute pitch control.
+* The filenames of the samples must start with the MIDI pitch value that best describes its content — e.g. `60_guitar_pluck.wav`. **EC-sampler** uses this information to provide absolute pitch control.
 * Only `.wav` or `.aif` files are supported.
 
 For quick corpus construction, see **EC-analyzer**.
