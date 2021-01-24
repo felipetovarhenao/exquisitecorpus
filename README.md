@@ -2,8 +2,8 @@
 #### __corpus-based sampling & analysis M4L devices__
 
 ## EC-analyzer reference
-**Device type**: Max instrument
-**Last tested on**: 
+**Device type**: Max instrument<br /> 
+**Built on**: 
   * Ableton Live 10.1.30
   * Max 8.1.8
   * macOS Mojave 10.14.5
