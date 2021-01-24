@@ -44,7 +44,7 @@ For corpus-based sampling, see **EC-sampler**.
 ## EC-sampler reference
 **Device type**: Max instrument
 
-![EC-sampler prev](https://github.com/felipetovarhenao/exquisitecorpus/blob/main/02%20ec_analyzer/EC-analyzer_prev.png)
+![EC-sampler prev](https://github.com/felipetovarhenao/exquisitecorpus/blob/main/01%20ec_sampler/EC-sampler_prev.png)
 
 #### Description
 
