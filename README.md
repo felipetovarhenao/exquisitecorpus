@@ -3,6 +3,10 @@
 
 ## EC-analyzer reference
 **Device type**: Max instrument
+**Last tested on**: 
+  * Ableton Live 10.1.30
+  * Max 8.1.8
+  * macOS Mojave 10.14.5
 
 ![EC-analyze prev](https://github.com/felipetovarhenao/exquisitecorpus/blob/main/02%20ec_analyzer/EC-analyzer_prev.png)
 
@@ -80,7 +84,11 @@ For quick corpus construction, see **EC-analyzer**.
 * **BMI (or body mass index)**: specifies how extreme the transposition of each sample can be. A greater BMI will allow more samples per pitch to be used, resulting in a more varied but less naturally-sounding corpus. Conversely, a lower BMI will result in a less varied but more naturally sounding corpus.
 * **out. gain**: sets output gain in dB.
 * **stereo**: controls the width of the stereo image. 
-* **envelope**: GUI for envelope specification.
+* **envelope**: GUI for envelope specification. 
+  * [click] on background to add a new point.
+  * [click] on point to change its position. 
+  * [alt+click & drag] to edit curvature between points.
+  * [shift+click] to delete point.
 * **step sequencer**: GUI for customizing a duration-velocity sequence to be used in pulse mode. The period and segment of the sequence to be changed via the loop selector on top.
 * **sequence index**: The step sequencer contains 8 different slots in which to store separate sequences. The sequence index sets the sequence to be used or edited. 
 * **step sequencer toggle**: Enables/disables the use of the step sequencer in pulse mode.
