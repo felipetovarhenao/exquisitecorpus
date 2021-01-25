@@ -76,7 +76,7 @@ For quick corpus construction, see **EC-analyzer**.
 
 * **load corpus**: opens dialog window to select a directory containing multiple .wav or .aif audio files. As mentioned earlier, the name of each sound file should include at the beginning its corresponding MIDI pitch value — e.g. `71_clarinet_sound.aiff`
 * **corpus chooser**: Displays all the audio files in the loaded corpus. At least one sample must be selected in order to EC-sampler to work.
-* **store**: **EC-sampler** has 10 slots to store selections withing the same corpus. To do this, select the target slot using the number box, then select the selection of samples you want to store, and click on the store button. Changing the slot index will automatically load the selection assigned to that slot.
+* **store selection**: **EC-sampler** has 10 slots to store selections withing the same corpus. To do this, select the target slot using the number box, then select the selection of samples you want to store, and click on the store button. Changing the slot index will automatically load the selection assigned to that slot.
 
   ![EC-sampler_m2](reference_screenshots/EC-sampler_2.png)
 
@@ -84,6 +84,7 @@ For quick corpus construction, see **EC-analyzer**.
   * **bypass**: Removes any pitch transposition, preserving every sample's original pitch and duration.
   * **resample**: transposition affects both the pitch and original duration of the sample.
   * **repitch (default)**: transposition only changes the pitch while preserving the original duration of the sample.
+  * **stretch & repitch**: similar to *repitch*, but the entire sample is stretch to fit the duration of the note — in other words, duration a pitch are modified independently. Note that both *repitch* and *stretch & repitch* are more CPU intensive than *resample* and, of course, *bypass*.
 * **playback mode**: Sets the behavior between MIDI input and sample playback.
   * **trigger (default)**: a sample is triggered only when there is a new incoming MIDI note.
   * **pulse**: A stream of samples are triggered according to the specified pulse unit (see pulse unit). This mode only works when the Live transport is running. 
@@ -104,6 +105,8 @@ For quick corpus construction, see **EC-analyzer**.
   * [click] on point to change its position. 
   * [alt+click & drag] to edit curvature between points.
   * [shift+click] to delete point.
+* **store envelope**: **EC-sampler** has 4 slots to store different envelopes. To do this, select the target slot by clicking the slot tab, then modify the envelope as desired, and click on the store button. Changing the slot index will automatically load the envelope assigned to that slot.
+
 
   ![EC-sampler_m3](reference_screenshots/EC-sampler_3.png)
 
