@@ -114,7 +114,7 @@ For quick corpus construction, see **EC-analyzer**.
 * **sequence index**: The step sequencer contains 8 different slots in which to store separate sequences. The sequence index sets the sequence to be used or edited. 
 * **step sequencer toggle**: Enables/disables the use of the step sequencer in pulse mode.
 * **edit view**: Sets the step sequencer layer to be edited — i.e. velocity or duration.
-* **scramble**: randomizes de values for each step in the step sequencer.
+* **scramble**: shuffles the order of all the current step values within the same edit view.
 * **restart**: Sets back the sequence to step 1.
 * **clear**: Normalizes all the step values in the current edit view.
 
