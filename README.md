@@ -74,7 +74,7 @@ For quick corpus construction, see **EC-analyzer**.
 
   ![EC-sampler_m1](reference_screenshots/EC-sampler_1.png)
 
-* **load corpus**: opens dialog window to select a directory containing multiple .wav or .aif audio files. As mentioned earlier, the name of each sound file should include at the beginning its corresponding MIDI pitch value — e.g. `71_clarinet_sound.aiff`
+* **load corpus**: opens dialog window to select a directory containing multiple `.wav` or `.aif` audio files. As mentioned earlier, the name of each sound file should include at the beginning its corresponding MIDI pitch value — e.g. `71_clarinet_sound.aiff`
 * **corpus chooser**: Displays all the audio files in the loaded corpus. At least one sample must be selected in order to EC-sampler to work.
 * **store selection**: **EC-sampler** has 10 slots to store selections withing the same corpus. To do this, select the target slot using the number box, then select the selection of samples you want to store, and click on the store button. Changing the slot index will automatically load the selection assigned to that slot.
 
