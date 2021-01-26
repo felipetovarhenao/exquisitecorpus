@@ -27,8 +27,8 @@ For corpus-based sampling, see **EC-sampler**.
 
 * **output folder**: opens dialog window to select a directory in which the resulting segments will be saved.
 * **input sample**: opens dialog window to select the sample to be analyzed and segmented.
-* **input folder**: opens dialog window to select a folder from which to choose the sample to be analyzed and segmented.
-* **input chooser**: when loading using ‘input folder’, all the samples in the folder are displayed in this window. Click sample on which to perform the analysis.
+* **input folder**: opens dialog window to select a folder from which to choose the sample to be analyzed and segmented. This makes the process easier when wanting to analyze several different samples.
+* **input chooser**: when loading using *input folder*, all the samples in the folder are displayed in this window. Click sample on which to perform the analysis.
 * **start**: starts pitch detection and segmentation.
 * **stop**: stops pitch detection and segmentation.
 
