@@ -82,9 +82,9 @@ For quick corpus construction, see **EC-analyzer**.
 
 * **transp. Mode**: sets the mode of transposition. 
   * **bypass**: Removes any pitch transposition, preserving every sample's original pitch and duration.
-  * **resample**: transposition affects both the pitch and original duration of the sample.
-  * **repitch (default)**: transposition only changes the pitch while preserving the original duration of the sample.
-  * **stretch & repitch**: similar to *repitch*, but the entire sample is stretch to fit the duration of the note — in other words, duration a pitch are modified independently. Note that both *repitch* and *stretch & repitch* are more CPU intensive than *resample* and, of course, *bypass*.
+  * **resample**: transposition affects both the pitch and original duration of the sample. High tranpositions will result in shorter durations, while low tranpositions will result in longer durations.
+  * **repitch (default)**: transposition only changes the pitch, while preserving the original duration of the sample.
+  * **stretch & repitch**: similar to *repitch*, but the entire sample is stretch to fit the specified duration in the device — in other words, duration and pitch are modified independently. Note that both *repitch* and *stretch & repitch* are more CPU intensive than *resample* and, of course, *bypass*.
 * **playback mode**: Sets the behavior between MIDI input and sample playback.
   * **trigger (default)**: a sample is triggered only when there is a new incoming MIDI note.
   * **pulse**: A stream of samples are triggered according to the specified pulse unit (see pulse unit). This mode only works when the Live transport is running. 
@@ -94,7 +94,7 @@ For quick corpus construction, see **EC-analyzer**.
 * **pulse unit**: sets the rhythmic value with respect to the current tempo, as a rational number. The fraction is expressed in relation to the whole-note within the current tempo — e.g. 1/16 = 16th note, 1/12 = 8th note triplet, 3/8 = dotted quarter note, and so on.
 * **transposition**: controls the global transposition of the sampler in cents.
 * **tr. var**: sets the amount of random variation in transposition.
-* **dur. mult**: sets the duration ratio with respect to the pulse unit. 
+* **dur. mult**: sets the duration ratio with respect to the pulse unit. `duration = (240000ms/tempo) * pulse_unit * dur_mult`
 * **dur. var**: sets the amount of random variation in note duration.
 * **rate. var**: sets the amount of random variation in pulse rate. This only works in pulse mode. See playback mode. 
 * **BMI (or body mass index)**: specifies how extreme the transposition of each sample can be. A greater BMI will allow more samples per pitch to be used, resulting in a more varied but less naturally-sounding corpus. Conversely, a lower BMI will result in a less varied but more naturally sounding corpus.
