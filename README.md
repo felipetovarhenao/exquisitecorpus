@@ -1,6 +1,8 @@
 # **exquisitecorpus**: 
 #### *corpus-based sampling & analysis M4L devices*
 
+[![exquisite corpus tutorials](reference_screenshots/EC-analyzer_1.png)](https://youtube.com/playlist?list=PLY28U8LUrteZ8EUIP1cGckAo79eBMmF-g)
+
 ## EC-analyzer reference
 **Device type**: Max instrument<br /> 
 **Built on**: 
