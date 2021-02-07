@@ -2,6 +2,7 @@
 #### *corpus-based sampling & analysis M4L devices*
 
 [![exquisite corpus tutorials](reference_screenshots/thumbnails-01.png)](https://youtube.com/playlist?list=PLY28U8LUrteZ8EUIP1cGckAo79eBMmF-g)
+click [here](https://youtube.com/playlist?list=PLY28U8LUrteZ8EUIP1cGckAo79eBMmF-g) to watch a YouTube tutorial series on **exquisitecorpus**
 
 ## EC-analyzer reference
 **Device type**: Max instrument<br /> 
@@ -30,7 +31,7 @@ For corpus-based sampling, see **EC-sampler**.
 * **output folder**: opens dialog window to select a directory in which the resulting segments will be saved.
 * **input sample**: opens dialog window to select the sample to be analyzed and segmented.
 * **input folder**: opens dialog window to select a folder from which to choose the sample to be analyzed and segmented. This makes the process easier when wanting to analyze several different samples.
-* **input chooser**: when loading using *input folder*, all the samples in the folder are displayed in this window. Click sample on which to perform the analysis.
+* **input chooser**: when loading an input folder or sample, these will be displayed in the chooser window. Click a sample on which to perform the analysis.
 * **start**: starts pitch detection and segmentation.
 * **stop**: stops pitch detection and segmentation.
 
