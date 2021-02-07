@@ -15,7 +15,7 @@ click [here](https://youtube.com/playlist?list=PLY28U8LUrteZ8EUIP1cGckAo79eBMmF-
 
 #### Description
 
-Offline pitch detection and segmentation device for easy corpus construction. **EC-analyzer** works in the following way:
+Offline pitch detection and segmentation device for easy corpus construction. In a nutshell, this is how **EC-analyzer** works:
 *	The device performs a non-real time pitch analysis on a sound file.
 *	For every detected pitch, a segment of the sound file is created.
 *	Each segment’s name will start with the detected pitch, in MIDI format — e.g. `60_filename-n142.wav`. The window index from the analysis — e.g. `-n142` — is also added at the end to differentiate between multiple segments sharing the same detected pitch. 
