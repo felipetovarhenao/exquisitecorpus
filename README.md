@@ -39,7 +39,7 @@ For corpus-based sampling, see **EC-sampler**.
 
 * **output duration (ms)**: sets the duration for all the resulting segments. Please note, this duration does not determine the window size of the analysis.
 * **hop size (ms)**: sets the time interval between adjacent windows for the analysis.
-* **overlap factor (ms)**: determines the amount of overlap between adjacent windows for the analysis. `total_window_length = hop_size * overlap_factor`.
+* **overlap factor**: determines the amount of overlap between adjacent windows for the analysis. `total_window_length = hop_size * overlap_factor`.
 * **tolerance (σ)**: sets the error tolerance for pitch detection, in semitones. More precisely, it is the maximum standard deviation allowed for a pitch to be detected.
 * **progress**: shows the percentage of the analysis — this can also be viewed in the waveform display.
 * **samples**: shows the number of segments created at the end of each analysis.
