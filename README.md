@@ -127,3 +127,15 @@ For quick corpus construction, see **EC-analyzer**.
 * Using the bypass tranposition mode might seem unintuitive at first because it gets rid of the main premise of the device — i.e. providing absolute pitch control across the corpus's samples. However, using this mode has its own appeal when used with a low BMI value, because it would essentially use the MIDI input to choose samples that best matches the desired *register* (as opposed to absolute *pitch*) of the corpus.
 *	To store a corpus selection, first make sure you have set the slot number in which you want to store them prior to selecting the samples in the chooser. Otherwise, the selected samples will be replaced by the samples previously stored in the slot. 
 *	Bear in mind that, when loading a corpus selection, this won’t be reflected in in the chooser. That is, the samples won’t appear as selected, but they will still be used internally.
+
+---
+### **License**
+
+`exquisitecorpus` is distributed under the terms of the GNU General Public License version 3 (GPL-v3.0).
+
+---
+### **Dependencies**
+`exquisitecorpus` was developed using the following third-party dependencies:
+- [`ears`](https://www.bachproject.net/) (v0.0.1)
+- [`bach`](https://www.bachproject.net/) (v0.8.1.4)
+- [`Max sound box`](https://forum.ircam.fr/projects/detail/max-sound-box/) (v2021-11)
